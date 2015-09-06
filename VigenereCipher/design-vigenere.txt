@@ -1,0 +1,15 @@
+1. This component encodes or decodes a message by cycling through the
+characters of a given keyphrase and adding these values to the
+corresponding character integers.
+
+2. The main asks the user to input a message and a keyphrase. Then the
+method crypt uses these values to cycle through each character and calls
+the method codeChar to calculate the change in value of the encoded/decoded
+character.
+
+3. We should test when neither encode or decode are inputed by the user, a
+case when the length of the key phrase is less than the length of the
+message, a case where the length of the keyphrase is equal to the length of
+the message, and a case where it is larger, with both the encode and decode
+functions.
+
