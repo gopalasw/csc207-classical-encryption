@@ -1,0 +1,16 @@
+1. This component encodes or decodes a message with all keys from 0-25.
+
+2. The main asks the user to input either encode or decode, and then a
+message to encode/decode. Then the method crypt takes the message and the
+cryptType, and cycles through each character in the message, giving these
+chars to codeChar. Depending on the cryptType, crypt either gives codeChar
+a negative or a postitive key. codeChar takes a char c and an int key, and
+calculates and returns the char finalChar that is the value from
+added/subtrating key from c. crypt then prints this for each character in
+the message, and repeats for keys from 0 to 25. 
+
+3. We should test when neither encode or decode are inputed by the user, a
+case when the message entered is an empty string, the two normal cases (for
+encode and decode with a normal string), and a case for each of encode and
+decode when the character returned by codeChar had to be wrapped around
+(e.g. < 0 or > 25).
